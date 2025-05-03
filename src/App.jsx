@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BasicLayout } from './components/layout/BasicLayout';
+import { PageHome } from './pages/PageHome';
+import { PageNotFound } from './pages/PageNotFound';
+import { PageGalininkas } from './pages/PageGalininkas';
+import { PageInagininkas } from './pages/PageInagininkas';
+import { PageKilmininkas } from './pages/PageKilmininkas';
+import { PageNaudininkas } from './pages/PageNaudininkas';
+import { PageVardininkas } from './pages/PageVardininkas';
+import { PageVietininkas } from './pages/PageVietininkas';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+      <Route element={<BasicLayout />}>
+          <Route index path='/' element={<PageHome />} />
+          <Route path='/galininkas' element={<PageGalininkas />} />
+          <Route path='/inagininkas' element={<PageInagininkas />} />
+          <Route path='/kilmininkas' element={<PageKilmininkas />} />
+          <Route path='/naudininkas' element={<PageNaudininkas />} />
+          <Route path='/vardininkas' element={<PageVardininkas />} />
+          <Route path='/vietininkas' element={<PageVietininkas />} />
+          <Route path='*' element={<PageNotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
