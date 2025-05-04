@@ -1,27 +1,83 @@
-.header {
+.centerWords {
+  width: 100%;
+    height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #ae2e2e;
-    padding: 0.5rem 1rem;
-    border: 2px solid #c2d0c5;
-    border-radius: 8px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  nav a:hover {
-    background-color: #dcd514;
-    color: #8186b4;
-  }
+    margin: 50px 0;
+}
+
+.grid {
+  width: 1156px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.circle:hover {
+  background-color: #45a049;
+}
+
+.ji {
+  margin-bottom: 180px;
+  margin-left: 100px;
+  background-color: #5a4a92;
+}
+
+.jis {
+  margin-top: 25rem;
+  background-color: #9e1416;
+}
+
+.as {
+  margin-top: 4rem;
+  background-color: #b5d03c;
+}
+
+.mes {
+ margin-top:-12rem;
+ background-color: #1298b0;
+ 
+}
+
+.tu {
+  margin-top: 50rem;
+  background-color: #460873;
+}
+
+.jus {
+  margin-top: 140px;
+  background-color: #d68024;
+}
+
+.jie {
+    
+  margin-left: 40px;
+  background-color: #9d6a89;
+}
+
+.jos {
+  margin-top: 25rem;
+  margin-right: 6rem;
+  background-color: #709571;
+}
+

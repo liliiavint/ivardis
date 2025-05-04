@@ -1,0 +1,9 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap:2rem;
+    flex-direction: row;
+    width: 55rem;
+    margin: 5rem calc(50% - 27.5rem)
+}

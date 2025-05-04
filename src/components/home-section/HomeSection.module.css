@@ -1,0 +1,18 @@
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; 
+    gap: 1rem; 
+    padding: 1rem;
+    height: 100vh; 
+  }
+  
+  .homeList {
+    flex: 0.5; 
+    background-color:transparent; 
+  }
+  
+  .centerWords {
+    flex: 2; 
+    background-color: transparent; 
+  }
