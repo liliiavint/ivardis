@@ -18,6 +18,7 @@
     justify-items: center;
     align-items: center;
     font-size: 3rem;
+    
 }
 
 .circle {
@@ -26,58 +27,109 @@
   align-items: center;
   width: 140px;
   height: 140px;
-  color: white;
-  text-decoration: none;
   border-radius: 50%;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+
 }
 
+
+
 .circle:hover {
-  background-color: #45a049;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
 
 .ji {
   margin-bottom: 180px;
   margin-left: 100px;
-  background-color: #5a4a92;
+  background: radial-gradient(circle at 30% 30%, #e2b0b0,#e54b5282);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+    color: #931d1d;
 }
 
 .jis {
   margin-top: 25rem;
-  background-color: #9e1416;
+  background: radial-gradient(circle at 30% 30%, #a193e2, #5e508d);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+  color: #3d3c8b;
+  
 }
 
 .as {
   margin-top: 4rem;
-  background-color: #b5d03c;
+  background: radial-gradient(circle at 30% 30%, #f4abd2, #972f57);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+  color: #5c1631;
 }
 
 .mes {
- margin-top:-12rem;
- background-color: #1298b0;
+margin-top:-12rem;
+background: radial-gradient(circle at 30% 30%, #b2f28b, #6ba931);
+box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+color: #20580b;
  
 }
 
 .tu {
   margin-top: 50rem;
-  background-color: #460873;
+  background: radial-gradient(circle at 30% 30%, #84efd6, #329f73);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+  color: #103105;
 }
 
 .jus {
   margin-top: 140px;
-  background-color: #d68024;
+  background: radial-gradient(circle at 30% 30%, #93d6e2, #328d8f);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+  color: #0f4f51;
 }
 
 .jie {
     
   margin-left: 40px;
-  background-color: #9d6a89;
+  background: radial-gradient(circle at 30% 30%, #d693e2, #dc8cf0);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+    color: #511f5d;
 }
 
 .jos {
   margin-top: 25rem;
   margin-right: 6rem;
-  background-color: #709571;
+  background: radial-gradient(circle at 30% 30%, #e5d489, #948024);
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+    color: #51510f;
 }
 

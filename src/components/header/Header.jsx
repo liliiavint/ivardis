@@ -3,6 +3,7 @@ import style from './Header.module.css';
 import { SearchBar } from '../search/SearchBar';
 import { useState } from 'react';
 import { IoClose, IoSearch } from "react-icons/io5";
+import { Logo } from '../logo/logo';
 
 export function Header() {
     const [searchOpen, setSearchOpen] = useState(true);
@@ -15,8 +16,8 @@ export function Header() {
 
    return  (
     <header className={searchOpen ? style.headerStandart : style.headerSearch} >
-            <div className={style.logoBox}>
-                <Link to="/"><img src="/assets/logo.png" alt="Logo" className={style.logo} /></Link>
+            <div className={searchOpen ? style.logoBox : style.logoBoxClose}>
+                <Link className={style.headerLogo} to="/"><Logo/></Link>
             </div>
             <div className={searchOpen ? style.searchBox : style.searchBoxClose}> 
                 <SearchBar />
