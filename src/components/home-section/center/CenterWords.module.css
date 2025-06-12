@@ -133,3 +133,70 @@ color: #20580b;
     color: #51510f;
 }
 
+@media only screen and (max-width: 1024px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    font-size: 1.5rem;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .ji {
+    margin-bottom: 90px;
+    margin-left: 50px;
+    
+  }
+  
+  .jis {
+    margin-top: 13rem;
+    
+    
+  }
+  
+  .as {
+    margin-top: 2rem;
+    
+  }
+  
+  .mes {
+  margin-top:-6rem;
+  
+   
+  }
+  
+  .tu {
+    margin-top: 25rem;
+    
+  }
+  
+  .jus {
+    margin-top: 70px;
+    
+  }
+  
+  .jie {
+      
+    margin-left: 20px;
+    
+  }
+  
+  .jos {
+    margin-top: 13rem;
+    margin-right: 3rem;
+   
+  }
+}

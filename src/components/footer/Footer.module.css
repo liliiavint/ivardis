@@ -1,8 +1,24 @@
 .footer {
     grid-area: footer;
+    height: 10rem;
+    width: 100%;
     padding: 2rem;
     font-size: 1.2rem;
     text-align: center;
     border-top: 0.1rem solid #ccc;
-    background-color: rgb(241, 226, 13);
+    background-color: rgb(244, 179, 166);
 }
+
+@media only screen and (max-width: 1024px) {
+    .footer {
+      padding: 1.5rem;
+      font-size: 1rem;
+    }
+  }
+  
+@media only screen and (max-width: 600px) {
+    .footer {
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  }

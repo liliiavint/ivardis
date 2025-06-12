@@ -1,4 +1,4 @@
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo2.png';
 import style from './logo.module.css'
 
 export function Logo() {

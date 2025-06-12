@@ -1,23 +1,31 @@
-.header,
-.headerStandard,
-.headerSearch {
+.header
+ {
     display: grid;
+    height:6rem;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 4.5rem);
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(235, 246, 153);
     border-bottom: 0.1rem solid #ccc;
     box-shadow: 0 0.2rem 0.4rem #0003;
     padding: 0 2rem;
+    transition: all 0.3s ease;
+}
+
+.headerStandart {
+    grid-template-columns: repeat(3, 1fr);
+}
+.headerSearch {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 
-.searchBtn,
-.closeSearchBtn {
-    cursor: pointer;
-    margin: 0 0.5rem;
+.closeMenuBtn {
+    opacity: 0.5;
 }
+
 
 .searchBtn {
     opacity: 0.5;
@@ -46,11 +54,14 @@
     border: transparent;
 }
 
-
+.signOutBtn {
+    font-size: 0.9rem;
+}
 
 .navLink:hover {
     background-color: rgb(51, 50, 50);
 }
+
 
 @media (max-width: 50rem) {
 

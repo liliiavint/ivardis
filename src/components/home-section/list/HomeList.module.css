@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     /*width: 200px;*/
-    padding: 1rem;
+    padding: 6rem 4rem;
     height: 100vh; 
     box-sizing: border-box;
     font-size: 2.5rem;
@@ -13,7 +13,7 @@
   .HomeList nav {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap:2.5rem;
   }
   
   .link{
@@ -22,119 +22,163 @@
     padding: 0.5rem 4rem;
     border-radius: 1rem;
     transition: background-color 0.3s ease;
+    box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.3),
+    0 10px 15px rgba(0, 0, 0, 0.4);
   }
+
+  .kasText,
+  .koText,
+  .kamText,
+  .kaText,
+  .kuoText,
+  .kurText {
+      font-size: 2rem;
+    }
+
+  .vardininkasText,
+  .kilmininkasText,
+  .naudininkasText,
+  .galininkasText,
+  .inagininkasText,
+  .vietininkasText {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-style: italic;
+    }
+
   .vard{
     border-color: #72a888;
     border-width: 0.2rem;
     border-style: solid;
+    background-color: #c7e8d4;
   }
   
   .vard:hover {
-    background-color: #d3fae3;
+    background-color: #e5fbee;
   }
-  .vardininkasText {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
-  }
+ 
   
-  .kasText {
-    font-size:2rem;
-    
-  }
 
   .kilm{
     border-color: #f98686;
     border-width: 0.2rem;
     border-style: solid;
+    background-color: #f8b3b3;
   }
   .kilm:hover {
-    background-color: #f7cece;
+    background-color: #f7e3e3;
   }
 
-  .kilmininkasText {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
-  }
   
-  .koText {
-    font-size:2rem;
-    
-  }
+
 
   .naud{
     border-color: #a076f4;
     border-width: 0.2rem;
     border-style: solid;
+    background-color:  #c4acf5;
   }
   .naud:hover {
-    background-color: #dccef7;
+    background-color: #e6def5;
   }
 
-  .naudininkasText {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
-  }
+ 
   
-  .kamText {
-    font-size:2rem;
-    
-  }
 
   .galin{
     border-color: #f66cd8;
     border-width: 0.2rem;
     border-style: solid;
+    background-color:  #f5b6e8;
   }
   .galin:hover {
-    background-color: #f7ceee;
-  }
-  .galininkasText  {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
+    background-color: #fadef4;
   }
   
-  .kaText {
-    font-size:2rem;
-    
-  }
+  
+
   .inag{
     border-color: #71b2f3;
     border-width: 0.2rem;
-    border-style: solid;
+    background-color:  #b7d6f5;
   }
   .inag:hover {
-    background-color: #acd0f4;
-  }
-  .inagininkasText  {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
+    background-color: #e0ecf8;
   }
   
-  .kuoText {
-    font-size:2rem;
-    
-  }
+  
 
   .viet{
     border-color: #f2cc72;
     border-width: 0.2rem;
     border-style: solid;
+    background-color:  #f5e1b1;
   }
   .viet:hover {
-    background-color: #f5f0b0;
-  }
-  .vietininkasText  {
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-style: italic;
+    background-color: #f3f1dd;
   }
   
-  .kurText {
-    font-size:2rem;
-    
+  
+
+  @media only screen and (max-width: 1024px) {
+    .HomeList {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  
+    .link {
+      padding: 0.5rem 2rem;
+    }
+  
+    .vardininkasText,
+    .kilmininkasText,
+    .naudininkasText,
+    .galininkasText,
+    .inagininkasText,
+    .vietininkasText {
+      font-size: 2rem;
+    }
+  
+    .kasText,
+    .koText,
+    .kamText,
+    .kaText,
+    .kuoText,
+    .kurText {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* Mobile (width ≤ 600px) */
+  @media only screen and (max-width: 600px) {
+    .HomeList {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      height: auto; /* Let it grow naturally on small screens */
+    }
+  
+    .link {
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+  
+    .vardininkasText,
+    .kilmininkasText,
+    .naudininkasText,
+    .galininkasText,
+    .inagininkasText,
+    .vietininkasText {
+      font-size: 1.5rem;
+    }
+  
+    .kasText,
+    .koText,
+    .kamText,
+    .kaText,
+    .kuoText,
+    .kurText {
+      font-size: 1.2rem;
+    }
   }

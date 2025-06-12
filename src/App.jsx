@@ -13,16 +13,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route element={<BasicLayout />}>
-          <Route index path='/' element={<PageHome />} />
-          <Route path='/galininkas' element={<PageGalininkas />} />
-          <Route path='/inagininkas' element={<PageInagininkas />} />
-          <Route path='/kilmininkas' element={<PageKilmininkas />} />
-          <Route path='/naudininkas' element={<PageNaudininkas />} />
-          <Route path='/vardininkas' element={<PageVardininkas />} />
-          <Route path='/vietininkas' element={<PageVietininkas />} />
-          <Route path='*' element={<PageNotFound />} />
-        </Route>
+        <Route path="/" element={<BasicLayout />}>
+            <Route index path='/' element={<PageHome />} />
+            <Route path='/galininkas' element={<PageGalininkas />} />
+            <Route path='/inagininkas' element={<PageInagininkas />} />
+            <Route path='/kilmininkas' element={<PageKilmininkas />} />
+            <Route path='/naudininkas' element={<PageNaudininkas />} />
+            <Route path='/vardininkas' element={<PageVardininkas />} />
+            <Route path='/vietininkas' element={<PageVietininkas />} />
+            <Route path='*' element={<PageNotFound />} />
+          </Route>
       </Routes>
     </BrowserRouter>
   );
