@@ -1,0 +1,14 @@
+.homeJie {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; 
+  gap: 1rem; 
+  padding: 1rem;
+  height: 100vh; 
+  width: 1800px;
+  background-color: rgb(224, 252, 224);
+  border-bottom: 0.1rem solid #ccc;
+  box-shadow: 0 0.2rem 0.4rem #0003;
+}
+ 
+  
