@@ -44,7 +44,28 @@ export function Jus() {
                         </div>
                     </div>
                 </div>
-                <div className={`${style.circle} ${style.jus}`}>Jus</div>
+                <div className={ style.jus}>
+                    <div className={style.head}>
+                        <h2> Galininkas. Ką? Jus</h2>
+                    </div>
+                    <div className={style.groupblock}>
+                        <div className={`${style.block1} ${style.block}`}>
+                            <h3 className={style.text}>Напрямок руху до когось</h3>
+                            <p className={style.text1}>Einu į jus. Я йду до вас. </p>
+                            <p className={style.text1}>Aš važiuoju pas jus. Я їду до вас.</p>
+                            <p className={style.text1}></p>
+                        </div>
+                        <div className={`${style.block1} ${style.block}`}>
+                            <h3 className={style.text}>Ви є об’єктом дії</h3>
+                            <p className={style.text1}>Mes girdime jus. – Ми чуємо вас. </p>
+                            <p className={style.text1}>Kas kviečia jus? – Хто вас кличе?
+
+</p>
+                            <p className={style.text1}></p>
+                        </div>
+                        
+                    </div>
+                </div>
                 <div className={`${style.circle} ${style.jumis}`}>Jumis</div>
                 <div className={`${style.circle} ${style.jumyse}`}>Jumyse</div>
         </main>
