@@ -3,8 +3,8 @@
     display: grid;
     height:6rem;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 4.5rem);
+    grid-template-columns: auto 1fr;
+    
     align-items: center;
     justify-content: center;
     background-color: rgb(235, 246, 153);
@@ -14,11 +14,44 @@
     transition: all 0.3s ease;
 }
 
+.logoBox {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+  width: 14rem;
+  height: 4rem;
+  border: 0.1rem solid rgba(11, 107, 28, 0.647);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 20px;
+  background: radial-gradient(circle at 30% 30%, #d6eff3, #b4f5f6);
+  font-size: 125px solid rgba(11, 105, 107, 0.647);
+  font-weight: bold;
+  font-family: t;
+
+}
+
+.searchBox {
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
 .headerStandart {
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
 }
 .headerSearch {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 
