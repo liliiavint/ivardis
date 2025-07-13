@@ -3,7 +3,7 @@
     flex-direction: column;
     /*width: 200px;*/
     padding: 6rem 4rem;
-    height: 100vh; 
+    height: auto; 
     box-sizing: border-box;
     font-size: 2.5rem;
 
