@@ -1,5 +1,149 @@
 .centerWords {
   width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.grid {
+  width: 100%;
+  max-width: 1156px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 300px;
+  gap: 1rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+/* Загальний стиль кружечків */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+/* Анімація */
+.circle:hover {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Індивідуальні стилі кольору */
+.as {
+  background: radial-gradient(circle at 30% 30%, #f4abd2, #972f57);
+  color: #5c1631;
+}
+.tu {
+  background: radial-gradient(circle at 30% 30%, #84efd6, #329f73);
+  color: #103105;
+}
+.ji {
+  background: radial-gradient(circle at 30% 30%, #e2b0b0, #e54b5282);
+  color: #931d1d;
+}
+.jis {
+  background: radial-gradient(circle at 30% 30%, #a193e2, #5e508d);
+  color: #3d3c8b;
+}
+.mes {
+  background: radial-gradient(circle at 30% 30%, #b2f28b, #6ba931);
+  color: #20580b;
+}
+.jus {
+  background: radial-gradient(circle at 30% 30%, #93d6e2, #328d8f);
+  color: #0f4f51;
+}
+.jie {
+  background: radial-gradient(circle at 30% 30%, #d693e2, #dc8cf0);
+  color: #511f5d;
+}
+.jos {
+  background: radial-gradient(circle at 30% 30%, #e5d489, #948024);
+  color: #51510f;
+}
+.as .tu .ji .jis .mes .jus .jie .jos{
+  box-shadow:
+    inset -10px -10px 20px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 20px rgba(0, 0, 0, 0.3),
+    0 20px 25px rgba(0, 0, 0, 0.4);
+}
+/* === 📱 Планшети: до 1024px === */
+@media only screen and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    font-size: 2rem;
+  }
+}
+
+/* === 📱 Мобільні: до 600px === */
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 50px);
+    font-size: 1.2rem;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*(.centerWords {
+  width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -50,7 +194,7 @@
 
 .as {
   /*margin-top: 4rem;*/
-  background: radial-gradient(circle at 30% 30%, #f4abd2, #972f57);
+ /*background: radial-gradient(circle at 30% 30%, #f4abd2, #972f57);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -60,7 +204,7 @@
 
 .tu {
  /* margin-top: 50rem;*/
-  background: radial-gradient(circle at 30% 30%, #84efd6, #329f73);
+  /*background: radial-gradient(circle at 30% 30%, #84efd6, #329f73);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -71,7 +215,7 @@
 .ji {
   /*margin-bottom: 180px;
   margin-left: 100px;*/
-  background: radial-gradient(circle at 30% 30%, #e2b0b0,#e54b5282);
+  /*background: radial-gradient(circle at 30% 30%, #e2b0b0,#e54b5282);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -81,7 +225,7 @@
 
 .jis {
   /*margin-top: 25rem;*/
-  background: radial-gradient(circle at 30% 30%, #a193e2, #5e508d);
+  /*background: radial-gradient(circle at 30% 30%, #a193e2, #5e508d);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -92,7 +236,7 @@
 
 .mes{
 /*margin-top:-12rem;*/
-background: radial-gradient(circle at 30% 30%, #b2f28b, #6ba931);
+/*background: radial-gradient(circle at 30% 30%, #b2f28b, #6ba931);
 box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -104,7 +248,7 @@ color: #20580b;
 .jus {
   /*margin-top: 70rem;
    margin-left:10rem;*/
-  background: radial-gradient(circle at 30% 30%, #93d6e2, #328d8f);
+  /*background: radial-gradient(circle at 30% 30%, #93d6e2, #328d8f);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -115,7 +259,7 @@ color: #20580b;
 .jie {
     
   /*margin-left: 40px;*/
-  background: radial-gradient(circle at 30% 30%, #d693e2, #dc8cf0);
+  /*background: radial-gradient(circle at 30% 30%, #d693e2, #dc8cf0);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -126,7 +270,7 @@ color: #20580b;
 .jos {
  /* margin-top: 25rem;
   margin-right: 6rem;*/
-  background: radial-gradient(circle at 30% 30%, #e5d489, #948024);
+  /*background: radial-gradient(circle at 30% 30%, #e5d489, #948024);
   box-shadow:
     inset -10px -10px 20px rgba(255, 255, 255, 0.5),
     inset 10px 10px 20px rgba(0, 0, 0, 0.3),
@@ -200,4 +344,4 @@ color: #20580b;
     margin-right: 3rem;
    
   }
-}
+})*/

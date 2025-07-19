@@ -90,4 +90,66 @@
 
 }  
 
+/* Екрани < 1400px — ноутбуки та великі планшети */
+@media (max-width: 1400px) {
+  .homeJus {
+    width: 100%;
+    padding: 1rem;
+  }
 
+  .groupblock {
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    justify-content: center;
+  }
+
+  .block {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .head {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .groupblock {
+    gap: 1.5rem;
+  }
+}
+
+/* Малі екрани (телефони, <768px) */
+@media (max-width: 767px) {
+  .homeJus {
+    padding: 0.5rem;
+  }
+
+  .head {
+    font-size: 1.25rem;
+    margin-left: 0;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .groupblock {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  .block {
+    max-width: 90%;
+    font-size: 0.9rem;
+  }
+
+  .circle {
+    font-size: 1rem;
+  }
+}

@@ -1,22 +1,52 @@
 .home {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch; 
-    gap: 1rem; 
-    padding: 1rem;
-    height: auto; 
-    width: 100%;
-    background-color: rgb(224, 252, 224);
-    border-bottom: 0.1rem solid #ccc;
-    box-shadow: 0 0.2rem 0.4rem #0003;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  background-color: rgb(224, 252, 224);
+  border-bottom: 0.1rem solid #ccc;
+  box-shadow: 0 0.2rem 0.4rem #0003;
+}
+
+/* Ліва колонка */
+.homeList {
+  flex: 0.5;
+  background-color: transparent;
+}
+
+/* Центральна частина */
+.centerWords {
+  flex: 2;
+  background-color: transparent;
+}
+
+/* 📱 Мобільні (до 767px) */
+@media only screen and (max-width: 767px) {
+  .home {
+    flex-direction: column;
+    padding: 0.5rem;
   }
-  
-  .homeList {
-    flex: 0.5; 
-    background-color:transparent; 
-  }
-  
+
+  .homeList,
   .centerWords {
-    flex: 2; 
-    background-color: transparent; 
+    flex: 1;
+    width: 100%;
   }
+}
+
+/* 📱 Планшети (768px – 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .homeList,
+  .centerWords {
+    flex: 1;
+    width: 100%;
+  }
+}
