@@ -43,10 +43,6 @@
   text-align: center;
 }
 
-.block1{
-
-}
-
 .head {
   padding: 0.5rem;
   font-size: 2rem;
@@ -68,17 +64,12 @@
   color: #454444;
 }
 
-.jusu {
-  
-}
+
 .circle{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- /* margin-left: 6rem;
-  width: 14rem;
-  height: 4rem;*/
   border: 0.1rem solid rgba(8, 75, 78, 0.647);
   box-shadow: 0 15px 20px rgba(88, 88, 88, 0.2);
   text-decoration: none;

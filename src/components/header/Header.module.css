@@ -33,15 +33,15 @@
   background: radial-gradient(circle at 30% 30%, #d6eff3, #b4f5f6);
   font-size: 125px solid rgba(11, 105, 107, 0.647);
   font-weight: bold;
-  font-family: t;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .searchBox {
   align-items: center;
   justify-content: center;
-  align-items: center;
 }
+
 .headerStandart {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -51,7 +51,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   justify-content: center;
-  align-items: center;
+
 }
 
 
