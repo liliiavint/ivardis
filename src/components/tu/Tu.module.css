@@ -1,0 +1,146 @@
+.homeJus {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 1rem; 
+    padding: 1rem;
+    height: auto; 
+    width: 1800px;
+    background-color: rgb(224, 252, 224);
+    border-bottom: 0.1rem solid #ccc;
+    box-shadow: 0 0.2rem 0.4rem #0003;
+  }
+  
+  .jusu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+  
+  .groupblock{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 6rem;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  
+  .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid rgba(8, 75, 78, 0.647);
+    box-shadow: 0 15px 20px rgba(88, 88, 88, 0.2);
+    border-radius: 20px;
+    background: radial-gradient(circle at 30% 30%, #d6eff3, #b4f5f6);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+    max-width: 25rem;
+    text-align: center;
+  }
+  
+  .head {
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;  
+    margin-left: 4rem;
+  }
+  
+  .text {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #232323;
+  }
+  
+  .text1 {
+    display: flex;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #454444;
+  }
+  
+  
+  .circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid rgba(8, 75, 78, 0.647);
+    box-shadow: 0 15px 20px rgba(88, 88, 88, 0.2);
+    text-decoration: none;
+    border-radius: 20px;
+    background: radial-gradient(circle at 30% 30%, #d6eff3, #b4f5f6);
+    font-size: 125px solid rgba(11, 105, 107, 0.647);
+    font-weight: bold;
+    
+  
+  }  
+  
+  /* Екрани < 1400px — ноутбуки та великі планшети */
+  @media (max-width: 1400px) {
+    .homeJus {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .groupblock {
+      flex-wrap: wrap;
+      margin-left: 2rem;
+      justify-content: center;
+    }
+  
+    .block {
+      max-width: 20rem;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .head {
+      font-size: 1.5rem;
+    }
+  
+    .text {
+      font-size: 1.2rem;
+    }
+  
+    .groupblock {
+      gap: 1.5rem;
+    }
+  }
+  
+  /* Малі екрани (телефони, <768px) */
+  @media (max-width: 767px) {
+    .homeJus {
+      padding: 0.5rem;
+    }
+  
+    .head {
+      font-size: 1.25rem;
+      margin-left: 0;
+    }
+  
+    .text {
+      font-size: 1rem;
+    }
+  
+    .groupblock {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-left: 0;
+    }
+  
+    .block {
+      max-width: 90%;
+      font-size: 0.9rem;
+    }
+  
+    .circle {
+      font-size: 1rem;
+    }
+  }

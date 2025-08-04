@@ -12,6 +12,7 @@ import { PageMes } from './pages/PageMes';
 import { PageJus } from './pages/PageJus';
 import { PageJie } from './pages/PageJie';
 import { PageJos } from './pages/PageJos';
+import { PageTu } from './pages/PageTu';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='/jus' element={<PageJus />} />
             <Route path='/jie' element={<PageJie />} />
             <Route path='/jos' element={<PageJos />} />
+            <Route path='/tu' element={<PageTu />} />
             <Route path='*' element={<PageNotFound />} />
           </Route>
       </Routes>
